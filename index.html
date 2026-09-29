@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRINT X — All Kind of Advertising &amp; Printing Solutions | Kalawana</title>
+
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description"
+    content="PRINT X Kalawana - Your premier partner for Flex Banners, Stickers, Name Boards, Photo Framing, Printouts, Brand Promotion, Graphic Design &amp; all advertising services. Website under maintenance, orders open via WhatsApp!" />
+  <meta name="keywords"
+    content="Print X, Printing Kalawana, Flex Banners, Advertising, Stickers, Name Boards, Photo Framing, Ratnapura Road" />
+  <meta name="theme-color" content="#08090d" />
+  <meta property="og:title" content="PRINT X — All Kind of Advertising &amp; Printing Services" />
+  <meta property="og:description"
+    content="Flex Banners, Stickers, Name Boards, Framing, Printouts &amp; Brand Promotion. Contact us directly on WhatsApp: 070 143 4949." />
+  <meta property="og:image" content="logo.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Ambient Interactive Canvas Background -->
+  <canvas id="particleCanvas"></canvas>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Main Viewport Container -->
+  <div class="page-container">
+
+    <!-- Top Navigation / Status Header -->
+    <header class="top-nav">
+      <div class="logo-wrapper">
+        <img src="logo.png" alt="PRINT X Advertising &amp; Printing Services" class="brand-logo" id="brandLogo" />
+      </div>
+
+      <div class="system-status-pill">
+        <span class="pulse-indicator">
+          <span class="pulse-dot"></span>
+          <span class="pulse-ring"></span>
+        </span>
+        <div class="status-texts">
+          <span class="status-title">Site Under Maintenance</span>
+          <span class="status-sub">Orders Active via WhatsApp</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Center Hero Screen Content -->
+    <main class="hero-screen">
+
+      <!-- Headline & Tagline -->
+      <div class="hero-intro">
+        <div class="eyebrow-badge">
+          <svg class="sparkle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+          </svg>
+          <span>All Kind of Advertising Services Providers</span>
+        </div>
+
+        <h1 class="hero-title">
+          Bringing Your Ideas To Life In Vibrant Print
+        </h1>
+      </div>
+
+      <!-- Interactive Services Bento Showcase -->
+      <section class="services-showcase" aria-label="Our Printing and Advertising Services">
+        <div class="services-header-row">
+          <span class="section-label">SELECT A SERVICE TO INQUIRE INSTANTLY:</span>
+          <span class="selected-service-hint" id="serviceHint">Tap any service to customize your message</span>
+        </div>
+
+        <div class="services-chips-grid" id="servicesGrid">
+          <button class="service-chip active" data-service="Flex Banners" type="button">Flex Banners</button>
+          <button class="service-chip" data-service="Stickers" type="button">Stickers</button>
+          <button class="service-chip" data-service="Name Boards" type="button">Name Boards</button>
+          <button class="service-chip" data-service="Photo Framing" type="button">Photo Framing</button>
+          <button class="service-chip" data-service="Printout" type="button">Printout</button>
+          <button class="service-chip" data-service="Photo Copy" type="button">Photo Copy</button>
+          <button class="service-chip" data-service="Brand Promoting" type="button">Brand Promoting</button>
+          <button class="service-chip" data-service="Design" type="button">Design</button>
+          <button class="service-chip" data-service="Leaflets" type="button">Leaflets</button>
+          <button class="service-chip highlight-chip" data-service="All Kind of Printing Services" type="button">All Kind of Printing</button>
+        </div>
+      </section>
+
+      <!-- Action & Contact Hub -->
+      <section class="action-hub">
+
+        <!-- Primary Direct WhatsApp Button -->
+        <a id="whatsappBtn"
+          href="https://wa.me/94701434949?text=Hello%20Print%20X,%20I%20would%20like%20to%20inquire%20about%20Flex%20Banners"
+          target="_blank" rel="noopener noreferrer" class="cta-whatsapp-btn" id="ctaWhatsapp">
+          <div class="whatsapp-icon-circle">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+              <path
+                d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.074-1.127-.065-.272-.087-.628-.206-1.077-.402-1.905-.831-3.142-2.738-3.237-2.865-.095-.127-.773-1.03-.773-1.963 0-.934.489-1.393.663-1.584.175-.19.382-.238.51-.238.127 0 .255.002.366.007.119.006.278-.045.435.334.16.388.544 1.332.592 1.43.048.098.08.212.016.339-.064.127-.096.206-.19.318-.096.111-.202.248-.288.334-.096.095-.196.198-.085.388.111.19.493.813 1.059 1.317.728.647 1.341.848 1.532.943.19.095.302.079.414-.048.111-.127.476-.556.603-.746.127-.19.254-.159.429-.095.175.064 1.111.524 1.302.619.19.095.317.143.365.222.048.079.048.461-.096.866z" />
+              <path
+                d="M12 2C6.477 2 2 6.477 2 12c0 1.821.487 3.53 1.338 5.004L2 22l5.127-1.314A9.957 9.957 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.154a8.106 8.106 0 0 1-4.226-1.183l-.303-.18-3.044.78.812-2.969-.198-.316A8.134 8.134 0 0 1 3.846 12C3.846 7.504 7.504 3.846 12 3.846 16.496 3.846 20.154 7.504 20.154 12c0 4.496-3.658 8.154-8.154 8.154z" />
+            </svg>
+          </div>
+          <div class="cta-text-group">
+            <span class="cta-label">Direct WhatsApp</span>
+            <span class="cta-phone">070 143 4949</span>
+          </div>
+          <div class="cta-action-tag">
+            <span class="action-tag-text">Chat</span>
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </div>
+        </a>
+
+        <!-- Location & Google Map Interactive Card -->
+        <a href="https://share.google/WLPByCrqUlmqSgBKS" target="_blank" rel="noopener noreferrer"
+          class="map-action-card" id="mapBtn">
+          <div class="map-icon-box">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <div class="map-details">
+            <span class="map-label">Our Location</span>
+            <span class="map-address">Ratnapura Road, Kalawana</span>
+          </div>
+          <div class="map-badge">
+            <span class="map-badge-text">Maps</span>
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </div>
+        </a>
+
+      </section>
+
+      <!-- Bottom Marquee Ticker -->
+      <footer class="bottom-footer">
+        <div class="ticker-wrap">
+          <div class="ticker-content">
+            <span>FLEX BANNERS</span>
+            <span class="dot">✦</span>
+            <span>CUSTOM STICKERS</span>
+            <span class="dot">✦</span>
+            <span>NAME BOARDS</span>
+            <span class="dot">✦</span>
+            <span>PHOTO FRAMING</span>
+            <span class="dot">✦</span>
+            <span>PRINTOUT &amp; PHOTO COPY</span>
+            <span class="dot">✦</span>
+            <span>BRAND PROMOTING</span>
+            <span class="dot">✦</span>
+            <span>GRAPHIC DESIGN</span>
+            <span class="dot">✦</span>
+            <span>LEAFLETS &amp; BROCHURES</span>
+            <span class="dot">✦</span>
+            <span>ALL COMMERCIAL PRINTING</span>
+            <span class="dot">✦</span>
+            <!-- Duplicate for seamless loop -->
+            <span>FLEX BANNERS</span>
+            <span class="dot">✦</span>
+            <span>CUSTOM STICKERS</span>
+            <span class="dot">✦</span>
+            <span>NAME BOARDS</span>
+            <span class="dot">✦</span>
+            <span>PHOTO FRAMING</span>
+            <span class="dot">✦</span>
+            <span>PRINTOUT &amp; PHOTO COPY</span>
+            <span class="dot">✦</span>
+            <span>BRAND PROMOTING</span>
+            <span class="dot">✦</span>
+            <span>GRAPHIC DESIGN</span>
+            <span class="dot">✦</span>
+            <span>LEAFLETS &amp; BROCHURES</span>
+            <span class="dot">✦</span>
+            <span>ALL COMMERCIAL PRINTING</span>
+            <span class="dot">✦</span>
+          </div>
+        </div>
+
+        <div class="footer-meta">
+          <span class="copyright">&copy; <span id="currentYear"></span> PRINT X. All rights reserved. Kalawana, Sri Lanka.</span>
+          <button type="button" class="quick-call-link" id="copyPhoneBtn">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span>Call: 070 143 4949</span>
+          </button>
+        </div>
+      </footer>
+
+    </main>
+
+  </div>
+
+  <!-- Notification Toast for Copied Info -->
+  <div class="toast-notification" id="toast">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message" id="toastMessage">Copied to clipboard!</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+
+</html>
